@@ -70,23 +70,27 @@ console.log(logOfElement(["ana", "are", "mere", "are"], "are"));
 
 console.log('----------------------------------- ex 5 end');
 
-// function pattern(n) {
-//     var sir = [];
-//     for (var i = 1; i <= n; i++) {
-//         for (var j = 1; j <= n; j++) {
-//             if ((i + j) % 2 === 0) {
-//                 sir = sir + [0];
-//             } else {
-//                 sir = sir + [1];
-//             }
-//         }
-//         console.log(sir);
-//         sir = [];
-//     }
-// }
-// pattern(6);
+// display in console
+
+function pattern1(n) {
+    var sir = [];
+    for (var i = 1; i <= n; i++) {
+        for (var j = 1; j <= n; j++) {
+            if ((i + j) % 2 === 0) {
+                sir = sir + [0];
+            } else {
+                sir = sir + [1];
+            }
+        }
+        console.log(sir);
+        sir = [];
+    }
+}
+pattern1(5);
 
 console.log('----------------------------------- ex extra end');
+
+// display on screen
 
 function pattern(n) {
     for (var i = 1; i <= n; i++) {
@@ -100,8 +104,5 @@ function pattern(n) {
         document.write("<br/>");
     }
 }
-var p = pattern(5);
 
-document.write("<br/>");
-
-var yy = pattern(10);
+pattern(5);
